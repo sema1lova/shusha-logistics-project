@@ -1,0 +1,892 @@
+@import "./variables.scss";
+@import "./index.scss";
+@import "./index2.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mobile__header{
+    display: none;
+}
+
+@media (max-width: 576px) {
+
+    // TOP HEADER START 
+
+    .top__header {
+     display: none;
+    }
+
+    // TOP HEADER END 
+
+
+
+
+    // HEADER SECTION START
+
+    .header__section {
+        background-image: url("../img/header/image\ 1.png");
+        height: 90vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        .header {
+            display: none;
+        }
+        .mobile__header{
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            justify-content: space-between;
+            background-color: $white;
+            padding: 16px 16px;
+            .mobile__header__logo{
+                img{
+                    object-fit: cover;
+                    vertical-align: bottom;
+
+                }
+            }
+
+            .mobile__header__icon{
+                text-align: end;
+                i{
+                    font-size: 20px;
+                }
+            }
+        }
+    
+        .header__section__content {
+            margin-top:100px;
+            .header__section__title {
+                font-weight: 600;
+                font-size: 60px;
+                color: $white;
+                margin: 0;
+                letter-spacing: 5px;
+            }
+            .header__section__title2 {
+                font-size: 30px;
+                color: $white;
+            }
+            .header__section__desc {
+                color: $white;
+                font-size: 17px;
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    
+    }
+
+    // HEADER SECTION END
+
+
+
+
+    // HAQQIMIZDA START
+
+    .haqqimizda {
+        .haqqimizda__top__content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .haqqimizda__top__desc {
+                .haqqimizda__top__p3 {
+                    width: 100%;
+                    color: $black;
+            text-align: justify;
+                    font-size: 17px;
+                }
+            }
+        }
+    
+        .haqqimizda__center__image {
+            margin: 30px 0;
+            img {
+                object-fit: cover;
+                vertical-align: bottom;
+                height: 200px;
+                width: 100%;
+            }
+        }
+    
+        .haqqimizda__bottom__content {
+            text-align: justify;
+            .haqqimizda__bottom__content__p1 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .haqqimizda__bottom__content__p2 {
+                width: 100%;
+            }
+        }
+    }
+
+    // HAQQIMIZDA END
+
+
+
+    // XIDMETLER START
+
+    .xidmetler {
+        margin: 80px 0;
+        .xidmetler__all {
+            display: flex;
+            flex-wrap: wrap;
+            .xidmetler__box {
+                width: 100%;
+                margin: 20px 0;
+                background: $white;
+                box-shadow: 0 0 15px rgba(119, 119, 119, 0.25);
+                .xidmetler__image {
+                    img {
+                        width: 100%;
+                    }
+                }
+    
+                }
+            .xidmetler__box2:nth-child(1) {
+                margin-top: 0px !important
+                        }
+            .xidmetler__box2:nth-child(2) {
+                margin-top: 0px !important
+                        }
+            .xidmetler__box2:nth-child(3) {
+                margin-top: 0px !important
+                       }
+            .xidmetler__box2:nth-child(4) {
+                margin-top: 0px !important
+                    }
+            .xidmetler__box2:nth-child(5) {
+                margin-top: 0px !important
+                        }
+            .xidmetler__box2:nth-child(6) {
+                margin-top: 0px !important
+            }
+            .xidmetler__box2:nth-child(7) {
+                margin-top: 0px !important
+
+            }
+    
+        }
+    
+        .xidmetler__top__title {
+            .xidmetler__top__p1 {
+                color: $pink;
+                font-size: 14px;
+                margin: 0;
+            }
+            .xidmetler__top__p2 {
+                font-size: 50px;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+    }
+
+    // XIDMETLER END
+
+
+
+    // PRINSIPLER START
+
+    .prinsipler {
+        background-image: url("../img/prinsiplerimiz/Rectangle\ 20.png");
+        height:auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin: 50px 0;
+        padding: 60px 0;
+        .prinsiplerimiz__top__content {
+            .prinsiplerimiz__top__p2 {
+                color: $white;
+                font-size: 35px;
+                font-weight: 600;
+                margin-bottom: 40px;
+            }
+        }
+    
+        .prinsiplerimiz__all {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            .prinsiplerimiz__box {
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 20px 30px;
+                height: 270px;
+                background-color: $white;
+                .prinsiplerimiz__content {
+                    .prinsiplerimiz__title {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $pink;
+                    }
+                    .prinsiplerimiz__desc {
+                        color: $black;
+                        text-align: justify;
+                        font-size: 15px;
+                    }
+                }
+                .prinsiplerimiz__image {
+                    margin-top: 10px;
+                    text-align: end;
+                    img {
+                        width: 12%;
+                        vertical-align: bottom;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    // PRINSIPLER END
+
+
+
+    // EMEKTASLARIMIZ START
+
+    .emektaslarimiz {
+        .emektaslirimiz__top {
+            margin: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            .emektaslarimiz__texts {
+                .emektaslarimiz__p2 {
+                    color: $black;
+                    font-size: 37px;
+                    font-weight: 600;
+                    letter-spacing: 3px;
+                    // margin: 0;
+                }
+            }
+    
+            .emektaslarimiz__content {
+                .emektaslarimiz__desc {
+                    width: 100%;
+                    text-align: justify;
+                    color: $black;
+                }
+            }
+        }
+    
+        .emektaslarimiz__center {
+            margin: 20px 0;
+            .emektaslarimiz__image {
+                img {
+                    width: 100%;
+                    height: 200px;
+                    vertical-align: bottom;
+                    object-fit: cover;
+    
+                }
+            }
+        }
+    }
+
+    //EMEKTASLARIMIZ END
+
+
+
+    // ELAQE START
+
+    .elaqe {
+        margin: 50px 0;
+        .elaqe__bizeyaz {
+            display: flex;
+            flex-wrap: wrap;
+            .elaqe__text {
+                .elaqe__p2 {
+                    font-size: 35px;
+                }
+                .elaqe__desc1 {
+                    width: 100%;
+                    text-align: justify;
+                    font-size: 17px;
+                    margin: 0;
+                }
+            }
+    
+            .elaqe__content {
+                margin-top: 30px;
+                background-color: $white;
+                box-shadow: 0 0 15px rgba(119, 119, 119, 0.25);
+                height: 300px;
+                padding:50px 10px;
+                .elaqe__desc2 {
+                    font-size: 17px;
+                    width: 100%;
+                    }
+                ul {
+                    display: flex;
+                    padding: 0;
+                    margin-top: 30px;   
+                }
+            }
+        }
+    }
+    
+
+    // ELAQE END
+
+
+
+
+    // FOOTER START 
+
+.footer{
+    background-image: url("../img/footer/Rectangle\ 24.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    .footer__top{
+        margin-top: 140px;
+        margin-bottom: 20px;
+        background-color:$white;
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;    
+        .footer__all{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            .footer__box{
+                margin: 10px 0;
+                ul{
+                    li{
+                        a{
+                            p{
+                                width: 50%;
+                                margin: 0 auto;   
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+      .footer__bottom{
+        .footer__image{
+            img{
+                width: 100%;
+                // height: 120px;
+                vertical-align: bottom;
+                object-fit: cover;
+            }
+        }
+    }
+    .footer__icons{
+        ul{
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            li{
+                margin: 0;
+                list-style: none;
+                a{
+                    color: $pink;
+                    i{
+                        margin-right: 20px;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    // FOOTER END
+
+
+
+    // COPYRIGHT START
+
+    .copyright{
+        padding: 22px 0;
+        background-color: $white;
+        .copyright__content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .copyright__left{
+                .copyright__p1{
+                    color: $pink;
+                    margin: 0;
+                }
+            }
+            .copyright__right{
+                margin: 0;
+                .copyright__p2{
+                    color: $pink;
+                    margin-right: 6px;
+                    margin-bottom: 0;
+                }
+                .copyright__p3{
+                    color: $pink;
+                    font-weight: 600;
+                    color: $pink;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    // COPYRIGHT END
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .col-md-6{
+        width: 49% !important;
+    }
+        // TOP HEADER START 
+    
+        .top__header {
+         display: none;
+        }
+    
+        // TOP HEADER END 
+    
+    
+    
+    
+        // HEADER SECTION START
+    
+        .header__section {
+            background-image: url("../img/header/image\ 1.png");
+            height: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0;
+            .header {
+                display: none;
+            }
+            .mobile__header{
+                display: flex;
+                align-items: center;
+                position: fixed;
+                width: 100% !important;
+                left: 0;
+                justify-content: space-between;
+                background-color: $white;
+                padding: 16px 16px;
+                .mobile__header__logo{
+                    img{
+                        object-fit: cover;
+                        vertical-align: bottom;
+    
+                    }
+                }
+    
+                .mobile__header__icon{
+                    text-align: end;
+                    i{
+                        font-size: 20px;
+                    }
+                }
+            }
+        
+            .header__section__content {
+                margin-top:80px;
+                .header__section__title {
+                    font-weight: 600;
+                    font-size: 60px;
+                    color: $white;
+                    margin: 0;
+                    letter-spacing: 5px;
+                }
+                .header__section__title2 {
+                    font-size: 30px;
+                    color: $white;
+                }
+                .header__section__desc {
+                    color: $white;
+                    font-size: 17px;
+                    width: 100%;
+                    margin: 20px 0;
+                }
+            }
+        
+        }
+    
+        // HEADER SECTION END
+    
+    
+    
+    
+        // HAQQIMIZDA START
+    
+        .haqqimizda {
+            .haqqimizda__top__content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .haqqimizda__top__desc {
+                    .haqqimizda__top__p3 {
+                        width: 100%;
+                        color: $black;
+                text-align: justify;
+                        font-size: 17px;
+                    }
+                }
+            }
+        
+            .haqqimizda__center__image {
+                margin: 30px 0;
+                img {
+                    object-fit: cover;
+                    vertical-align: bottom;
+                    height: 200px;
+                    width: 100%;
+                }
+            }
+        
+            .haqqimizda__bottom__content {
+                text-align: justify;
+                .haqqimizda__bottom__content__p1 {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                .haqqimizda__bottom__content__p2 {
+                    width: 100%;
+                }
+            }
+        }
+    
+        // HAQQIMIZDA END
+    
+    
+    
+        // XIDMETLER START
+    
+        .xidmetler {
+            margin: 80px 0;
+            .xidmetler__all {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .xidmetler__box {
+                    width: 100%;
+                    margin: 20px 0;
+                    background: $white;
+                    box-shadow: 0 0 15px rgba(119, 119, 119, 0.25);
+                    .xidmetler__image {
+                        img {
+                            width: 100%;
+                        }
+                    }
+        
+                    }
+                .xidmetler__box2:nth-child(1) {
+                    margin-top: 0px !important
+                            }
+                .xidmetler__box2:nth-child(2) {
+                    margin-top: 0px !important
+                            }
+                .xidmetler__box2:nth-child(3) {
+                    margin-top: 0px !important
+                           }
+                .xidmetler__box2:nth-child(4) {
+                    margin-top: 0px !important
+                        }
+                .xidmetler__box2:nth-child(5) {
+                    margin-top: 0px !important
+                            }
+                .xidmetler__box2:nth-child(6) {
+                    margin-top: 0px !important
+                }
+                .xidmetler__box2:nth-child(7) {
+                    margin-top: 0px !important
+    
+                }
+        
+            }
+        
+            .xidmetler__top__title {
+                .xidmetler__top__p1 {
+                    color: $pink;
+                    font-size: 14px;
+                    margin: 0;
+                }
+                .xidmetler__top__p2 {
+                    font-size: 50px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+        }
+    
+        // XIDMETLER END
+    
+    
+    
+        // PRINSIPLER START
+    
+        .prinsipler {
+            background-image: url("../img/prinsiplerimiz/Rectangle\ 20.png");
+            height:auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin: 50px 0;
+            padding: 60px 0;
+            .prinsiplerimiz__top__content {
+                .prinsiplerimiz__top__p2 {
+                    color: $white;
+                    font-size: 35px;
+                    font-weight: 600;
+                    margin-bottom: 40px;
+                }
+            }
+        
+            .prinsiplerimiz__all {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                .prinsiplerimiz__box {
+                    width: 100%;
+                    margin-bottom: 30px;
+                    padding: 20px 30px;
+                    height: 270px;
+                    background-color: $white;
+                    .prinsiplerimiz__content {
+                        .prinsiplerimiz__title {
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: $pink;
+                        }
+                        .prinsiplerimiz__desc {
+                            color: $black;
+                            text-align: justify;
+                            font-size: 15px;
+                        }
+                    }
+                    .prinsiplerimiz__image {
+                        margin-top: 10px;
+                        text-align: end;
+                        img {
+                            width: 12%;
+                            vertical-align: bottom;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    
+        // PRINSIPLER END
+    
+    
+    
+        // EMEKTASLARIMIZ START
+    
+        .emektaslarimiz {
+            .emektaslirimiz__top {
+                margin: 40px 0;
+                display: flex;
+                flex-wrap: wrap;
+                .emektaslarimiz__texts {
+                    .emektaslarimiz__p2 {
+                        color: $black;
+                        font-size: 37px;
+                        font-weight: 600;
+                        letter-spacing: 3px;
+                        // margin: 0;
+                    }
+                }
+        
+                .emektaslarimiz__content {
+                    .emektaslarimiz__desc {
+                        width: 100%;
+                        text-align: justify;
+                        color: $black;
+                    }
+                }
+            }
+        
+            .emektaslarimiz__center {
+                margin: 20px 0;
+                .emektaslarimiz__image {
+                    img {
+                        width: 100%;
+                        height: 200px;
+                        vertical-align: bottom;
+                        object-fit: cover;
+        
+                    }
+                }
+            }
+        }
+    
+        //EMEKTASLARIMIZ END
+    
+    
+    
+        // ELAQE START
+    
+        .elaqe {
+            margin: 50px 0;
+            .elaqe__bizeyaz {
+                display: flex;
+                flex-wrap: wrap;
+                .elaqe__text {
+                    .elaqe__p2 {
+                        font-size: 35px;
+                    }
+                    .elaqe__desc1 {
+                        width: 100%;
+                        text-align: justify;
+                        font-size: 17px;
+                        margin: 0;
+                    }
+                }
+        
+                .elaqe__content {
+                    margin-top: 30px;
+                    background-color: $white;
+                    box-shadow: 0 0 15px rgba(119, 119, 119, 0.25);
+                    height: 300px;
+                    padding:50px 10px;
+                    .elaqe__desc2 {
+                        font-size: 17px;
+                        width: 100%;
+                        }
+                    ul {
+                        display: flex;
+                        padding: 0;
+                        margin-top: 30px;   
+                    }
+                }
+            }
+        }
+        
+    
+        // ELAQE END
+    
+    
+    
+    
+        // FOOTER START 
+    
+    .footer{
+        background-image: url("../img/footer/Rectangle\ 24.png");
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        text-align: center;
+        .footer__top{
+            margin-top: 140px;
+            margin-bottom: 20px;
+            background-color:$white;
+            padding: 10px 0px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;    
+            .footer__all{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                .footer__box{
+                    margin: 10px 0;
+                    ul{
+                        li{
+                            a{
+                                p{
+                                    width: 50%;
+                                    margin: 0 auto;   
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+          .footer__bottom{
+            .footer__image{
+                img{
+                    width: 100%;
+                    // height: 120px;
+                    vertical-align: bottom;
+                    object-fit: cover;
+                }
+            }
+        }
+        .footer__icons{
+            ul{
+                display: flex;
+                justify-content: center;
+                padding: 0;
+                li{
+                    margin: 0;
+                    list-style: none;
+                    a{
+                        color: $pink;
+                        i{
+                            margin-right: 20px;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+        // FOOTER END
+    
+    
+    
+        // COPYRIGHT START
+    
+        .copyright{
+            padding: 22px 0;
+            background-color: $white;
+            .copyright__content{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .copyright__left{
+                    .copyright__p1{
+                        color: $pink;
+                        margin: 0;
+                    }
+                }
+                .copyright__right{
+                    margin: 0;
+                    .copyright__p2{
+                        color: $pink;
+                        margin-right: 6px;
+                        margin-bottom: 0;
+                    }
+                    .copyright__p3{
+                        color: $pink;
+                        font-weight: 600;
+                        color: $pink;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    
+        // COPYRIGHT END
+    
+}
